@@ -1,10 +1,11 @@
 use pyo3::prelude::*;
 use pyo3::wrap_pyfunction;
+
 mod fib_calcs;
-use fib_calcs::{
-    fib_number::fibonacci_number,
-    fib_numbers::fibonacci_numbers
-};
+use fib_calcs::fib_number::fibonacci_number;
+use fib_calcs::fib_numbers::fibonacci_numbers;
+
+// pub mod fib_numbers;
 
 #[pyfunction]
 fn say_hello() {
