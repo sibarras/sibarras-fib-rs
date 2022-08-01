@@ -1,0 +1,14 @@
+[package]
+name = "sibarras_fib_rs"
+version = "0.1.0"
+authors = ["Samuel Ibarra <ing.samuelibarra@gmail.com>"]
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+pyo3 = {version="0.16.4", features=["extension-module"]}
+
+[lib]
+name = "sibarras_fib_rs"
+crate-type = ["cdylib"]
