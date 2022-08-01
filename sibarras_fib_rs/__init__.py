@@ -1,1 +1,1 @@
-from sibarras_fib_rs import *
+from .sibarras_fib_rs import *
