@@ -7,7 +7,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-pyo3 = {version="0.16.4", features=["extension-module"]}
+[dependencies.pyo3]
+version="0.16.5"
+features=["extension-module"]
 
 [lib]
 name = "sibarras_fib_rs"

@@ -7,22 +7,21 @@ from setuptools_rust import Binding, RustExtension
 # with open("./version.py", 'rt') as vr:
 #     version = vr.read().split("=")[1].replace("'", "")
 
-version = '0.1'
 setup(
-    name="flitton-fib-rs",
-    version=version,
+    name="sibarras-fib-rs",
+    version='0.1',
     # author="Samuel Ibarra",
     # author_email="ing.samuelibarra@gmail.com",
     # description="Calculates a fibonacci number",
     # long_description=long_description,
     # long_description_content_type="text/markdown",
-    url="https://github.com/sibarras/sibarras-fib-rs.git",
+    # url="https://github.com/sibarras/sibarras-fib-rs.git",
     rust_extensions=[
         RustExtension(
-            ".flitton_fib_rs.flitton_fib_rs",
+            ".sibarras_fib_rs.sibarras_fib_rs",
             path="Cargo.toml", binding=Binding.PyO3
     )],
-    packages=["flitton_fib_rs"],
+    packages=["sibarras_fib_rs"],
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Development Status :: 3 - Alpha",
