@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from setuptools import dist
-dist.Distribution().fetch_build_eggs(['setuptools_rust'])
+dist.Distribution().fetch_build_eggs(['setuptools-rust'])
 from setuptools import setup
 from setuptools_rust import Binding, RustExtension
 
